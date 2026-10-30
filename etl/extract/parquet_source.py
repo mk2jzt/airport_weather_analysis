@@ -6,16 +6,16 @@ import pandas as pd
 logger = logging.getLogger(__name__)
 
 def extract_parquet(path: str) -> pd.DataFrame:
-     # преобразуем строку в объект Path для удобной работы с путями
-     path = Path(path)
+    # преобразуем строку в объект Path для удобной работы с путями
+    path = Path(path)
 
     # проверяем, что файл существует
-     if not path.exists():
-     raise FileNotFoundError(f"File not found: {path}")
+    if not path.exists():
+        raise FileNotFoundError(f"File not found: {path}")
 
     # проверяем расширение файла (с учётом регистра)
     if path.suffix.lower() != ".parquet":
-    raise ValueError(f"File must have .parquet extension: {path.name}")
+        raise ValueError(f"File must have .parquet extension: {path.name}")
 
     try:
         # логируем начало чтения файла
