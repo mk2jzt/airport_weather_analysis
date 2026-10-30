@@ -17,3 +17,9 @@ seeds:
         description: "Описание погодного явления"
         tests:
           - not_null
+
+seeds:
+  - name: raw_aerodatabox_fids_sample
+    config:
+      column_types:
+        payload: jsonb
