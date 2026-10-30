@@ -40,7 +40,7 @@ models:
               inclusive: true
 
       - name: apparent_temperature_c
-        description: "Ощущаемая температура"
+        description: "Ощущаемая температура воздуха"
 
       - name: dewpoint_2m_c
         description: "Точка росы"
