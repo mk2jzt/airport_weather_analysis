@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: fact_flights
-    description: "Таблица фактов рейсов"
+    description: "{{ doc('fact_flights') }}"
     
     tests:
       - valid_delay_status:
